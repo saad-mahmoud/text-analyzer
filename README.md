@@ -1,25 +1,23 @@
 # Text Analyzer
 
-A Python-based text analysis tool that processes text files and provides word frequency analysis.
+A simple Python text analysis tool that processes text files and provides word frequency analysis.
 
 ## Features
 
 - Text processing:
   - Converts text to lowercase
-  - Removes punctuation
   - Splits text into words
 - Word analysis:
   - Counts total number of words
   - Counts unique words
-  - Shows top 5 most frequent words
+  - Shows word frequencies
 - Output:
   - Displays analysis results in console
-  - Saves detailed results to JSON file
+  - Saves results to JSON file
 
 ## Requirements
 
 - Python 3.x
-- Dependencies listed in `requirements.txt`
 
 ## Installation
 
@@ -29,51 +27,43 @@ git clone <repository-url>
 cd text-analyzer
 ```
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
 ## Usage
 
-1. Place your text file in the project directory (default: `file.txt`)
-
-2. Run the analyzer:
+1. Run the analyzer:
 ```bash
-python main.py
+python analyzer.py
 ```
+
+2. Follow the menu options:
+   - Option 1: Analyze a text file
+   - Option 2: Exit the program
 
 3. View the results:
    - Console output shows:
-     - Original text
      - Total word count
      - Number of unique words
-     - Top 5 most frequent words
-   - Detailed results are saved in `results.json`
+     - Word frequencies
+   - Results are saved in `results.json`
 
 ## Example Output
 
 ```
-Original text:
-[Your text here]
+Total words: 10
+Unique words: 5
 
-Total number of words: X
-Number of unique words: Y
-
-Top 5 most frequent words:
-word1: 5
-word2: 3
-word3: 2
-word4: 2
-word5: 1
+Word frequencies:
+hello: 3
+world: 2
+python: 2
+text: 2
+analyzer: 1
 
 Results saved to results.json
 ```
 
 ## Project Structure
 
-- `main.py`: Main application code
-- `requirements.txt`: Project dependencies
+- `analyzer.py`: Main application code
 - `results.json`: Analysis output file
 
 ## License
